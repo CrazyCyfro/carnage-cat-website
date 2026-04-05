@@ -6,6 +6,7 @@
     --muted: #5c5c5c;
     --line: #e2e0d8;
     --accent: #6a5a45;
+    --content-line-gap: 1.5rem;
 }
 
 * {
@@ -120,7 +121,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 0.25rem 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--content-line-gap);
     border-bottom: 1px solid var(--line);
 }
 
@@ -215,7 +216,6 @@ a:hover {
 .form-embed {
     width: 100%;
     max-width: 640px;
-    margin-top: 0.5rem;
 }
 
 .form-embed iframe {
@@ -227,8 +227,8 @@ a:hover {
 }
 
 footer {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
+    margin-top: var(--content-line-gap);
+    padding-top: var(--content-line-gap);
     border-top: 1px solid var(--line);
     font-size: 0.8rem;
     color: var(--muted);
