@@ -1,0 +1,155 @@
+@import url("https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css");
+
+:root {
+    --bg: #f7f6f2;
+    --text: #1a1a1a;
+    --muted: #5c5c5c;
+    --line: #e2e0d8;
+    --accent: #2563eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+}
+
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.wrap {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: clamp(1.5rem, 4vw, 2.75rem) clamp(1.25rem, 5vw, 1.75rem) 3.5rem;
+}
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem 1.5rem;
+    padding-bottom: 1.75rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.header-intro {
+    min-width: 0;
+}
+
+.header-socials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem 1rem;
+    margin: 0 0 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.header-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    font-size: 1.35rem;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.header-socials a:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.header-socials i {
+    display: block;
+}
+
+.name {
+    margin: 0 0 0.35rem;
+    font-size: clamp(1.5rem, 4vw, 1.85rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.tagline {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+section:last-of-type {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin: 0 0 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+section p {
+    margin: 0 0 0.85rem;
+    color: var(--text);
+}
+
+section p:last-child {
+    margin-bottom: 0;
+}
+
+.meta {
+    font-size: 0.875rem;
+    color: var(--muted);
+}
+
+.form-embed {
+    width: 100%;
+    max-width: 640px;
+    margin-top: 0.5rem;
+}
+
+.form-embed iframe {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    height: 691px;
+    border: 0;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.8rem;
+    color: var(--muted);
+}
