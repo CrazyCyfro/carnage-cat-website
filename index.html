@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Aerial by HTML5 UP</title>
+		<title>Carnage Cat — Game Studio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,34 +16,203 @@
 		<div id="wrapper">
 			<div id="bg"></div>
 			<div id="overlay"></div>
-			<div id="main">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Adam Jensen</h1>
-						<p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
-						<nav>
-							<ul>
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+			<!-- Tabs -->
+				<nav id="tabs">
+					<ul>
+						<li><a href="#home" class="current">Home</a></li>
+						<li><a href="#games">Games</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#presskit">Press Kit</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+
+			<div id="main">
+				<div id="panels">
+
+					<!-- Home -->
+						<section class="panel" data-panel="home">
+							<header id="header">
+								<h1>Carnage Cat</h1>
+								<p>Game Studio &nbsp;&bull;&nbsp; Lorem ipsum dolor sit amet</p>
+								<nav>
+									<ul>
+										<li><a href="#" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+										<li><a href="#" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+										<li><a href="#" class="icon brands fa-tiktok"><span class="label">TikTok</span></a></li>
+									</ul>
+								</nav>
+								<form id="signup" action="#" method="post">
+									<p>Join our mailing list</p>
+									<input type="email" name="email" placeholder="Email address" required />
+									<input type="submit" value="Sign Up" class="button" />
+								</form>
+							</header>
+						</section>
+
+					<!-- Games -->
+						<section class="panel" data-panel="games">
+							<div class="inner">
+								<h2>Our Games</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								<div class="grid">
+									<article>
+										<span class="icon solid big fa-gamepad"></span>
+										<h3>Lorem Ipsum</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+										<p class="platforms">
+											<span class="icon brands fa-steam"><span class="label">Steam</span></span>
+											<span class="icon brands fa-playstation"><span class="label">PlayStation</span></span>
+											<span class="icon brands fa-xbox"><span class="label">Xbox</span></span>
+										</p>
+										<a href="#" class="button">Learn More</a>
+									</article>
+									<article>
+										<span class="icon solid big fa-cat"></span>
+										<h3>Dolor Sit Amet</h3>
+										<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+										<p class="platforms">
+											<span class="icon brands fa-steam"><span class="label">Steam</span></span>
+											<span class="icon solid fa-mobile-alt"><span class="label">Mobile</span></span>
+										</p>
+										<a href="#" class="button">Learn More</a>
+									</article>
+								</div>
+							</div>
+						</section>
+
+					<!-- About -->
+						<section class="panel" data-panel="about">
+							<div class="inner">
+								<h2>About Us</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+						</section>
+
+					<!-- Press Kit -->
+						<section class="panel" data-panel="presskit">
+							<div class="inner">
+								<h2>Press Kit</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								<dl class="facts">
+									<dt>Studio</dt><dd>Carnage Cat</dd>
+									<dt>Founded</dt><dd>Lorem ipsum</dd>
+									<dt>Location</dt><dd>Lorem ipsum</dd>
+									<dt>Team Size</dt><dd>Lorem ipsum</dd>
+									<dt>Press Contact</dt><dd><a href="mailto:press@example.com">press@example.com</a></dd>
+								</dl>
+								<p>
+									<a href="#" class="button">Download Press Kit</a>
+									<a href="#" class="button">Logos &amp; Key Art</a>
+								</p>
+							</div>
+						</section>
+
+					<!-- Contact -->
+						<section class="panel" data-panel="contact">
+							<div class="inner">
+								<h2>Contact</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								<p class="contact-email"><a href="mailto:hello@example.com">hello@example.com</a></p>
+							</div>
+						</section>
+
+				</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+						<span class="copyright">&copy; Carnage Cat. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
 					</footer>
 
 			</div>
 		</div>
 		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			window.onload = function() { document.body.classList.remove('is-preload'); };
+			window.onorientationchange = function() { document.body.scrollTop = 0; };
+
+			(function() {
+				var names = ['home', 'games', 'about', 'presskit', 'contact'];
+				var scroller = document.getElementById('panels');
+				var links = document.querySelectorAll('#tabs a');
+
+				function currentIndex() {
+					return Math.round(scroller.scrollLeft / scroller.clientWidth);
+				}
+
+				function setCurrent(i) {
+					for (var j = 0; j < links.length; j++) {
+						var isCurrent = links[j].getAttribute('href') === '#' + names[i];
+						links[j].className = isCurrent ? 'current' : '';
+					}
+				}
+
+				function goTo(i, instant) {
+					i = Math.max(0, Math.min(names.length - 1, i));
+					scroller.scrollTo({ left: i * scroller.clientWidth, behavior: instant ? 'auto' : 'smooth' });
+					setCurrent(i);
+				}
+
+				// Tab clicks / deep links (#games etc.)
+				window.addEventListener('hashchange', function() {
+					var i = names.indexOf(location.hash.slice(1));
+					if (i >= 0 && i !== currentIndex()) goTo(i);
+				});
+
+				// Keep the current tab highlighted while scrolling/swiping
+				var scrollTimer = null;
+				scroller.addEventListener('scroll', function() {
+					setCurrent(currentIndex());
+					if (scrollTimer) clearTimeout(scrollTimer);
+					scrollTimer = setTimeout(function() {
+						var name = names[currentIndex()];
+						if (location.hash.slice(1) !== name) {
+							try { history.replaceState(null, '', '#' + name); } catch (err) { /* file:// may disallow */ }
+						}
+					}, 150);
+				});
+
+				// Vertical mouse wheel flips to the next/previous panel
+				var wheelLock = false;
+				scroller.addEventListener('wheel', function(e) {
+					if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return; // native horizontal scroll/swipe
+					var panel = e.target.closest ? e.target.closest('.panel') : null;
+					if (panel && panel.scrollHeight > panel.clientHeight) return; // let tall panels scroll vertically
+					e.preventDefault();
+					if (wheelLock) return;
+					wheelLock = true;
+					goTo(currentIndex() + (e.deltaY > 0 ? 1 : -1));
+					setTimeout(function() { wheelLock = false; }, 500);
+				}, { passive: false });
+
+				// Left/right arrow keys
+				window.addEventListener('keydown', function(e) {
+					if (e.key === 'ArrowRight') goTo(currentIndex() + 1);
+					if (e.key === 'ArrowLeft') goTo(currentIndex() - 1);
+				});
+
+				// Keep alignment on window resize
+				window.addEventListener('resize', function() {
+					goTo(currentIndex(), true);
+				});
+
+				// Animate panel content in as it scrolls into view
+				var panels = document.querySelectorAll('.panel');
+				if ('IntersectionObserver' in window) {
+					var observer = new IntersectionObserver(function(entries) {
+						for (var k = 0; k < entries.length; k++) {
+							entries[k].target.classList.toggle('visible', entries[k].isIntersecting);
+						}
+					}, { root: scroller, threshold: 0.4 });
+					for (var p = 0; p < panels.length; p++) observer.observe(panels[p]);
+				} else {
+					for (var q = 0; q < panels.length; q++) panels[q].className += ' visible';
+				}
+
+				var start = names.indexOf(location.hash.slice(1));
+				goTo(start < 0 ? 0 : start, true);
+			})();
 		</script>
 	</body>
 </html>
