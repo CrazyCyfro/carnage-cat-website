@@ -214,7 +214,11 @@ input, select, textarea {
 	#bg {
 	/* Set your background with this */
 
-		background: #15151a;
+		background:
+			radial-gradient(ellipse 90% 65% at 75% -15%, rgba(96, 91, 255, 0.14), transparent 60%),
+			radial-gradient(ellipse 70% 55% at 10% 115%, rgba(255, 71, 87, 0.10), transparent 60%),
+			radial-gradient(ellipse 50% 40% at 50% 50%, rgba(255, 255, 255, 0.03), transparent 70%),
+			linear-gradient(165deg, #0c0c10 0%, #14141b 45%, #0e0e13 100%);
 		height: 100%;
 		left: 0;
 		opacity: 1;
@@ -1377,3 +1381,88 @@ input, select, textarea {
 		}
 
 	}
+
+/* Carnage Cat — modern minimalist theme refinements */
+
+	#tabs {
+		background-image: none;
+	}
+
+		#tabs a {
+			-webkit-backdrop-filter: blur(10px);
+			backdrop-filter: blur(10px);
+			background-color: rgba(255, 255, 255, 0.04);
+			border: solid 1px rgba(255, 255, 255, 0.18);
+		}
+
+			#tabs a:hover {
+				background-color: rgba(255, 255, 255, 0.12);
+				border-color: rgba(255, 255, 255, 0.4);
+			}
+
+			#tabs a.current {
+				background-color: rgba(255, 255, 255, 0.92);
+				border-color: transparent;
+				color: #101014;
+			}
+
+	.button {
+		border: solid 1px rgba(255, 255, 255, 0.3);
+	}
+
+		.button:hover {
+			background-color: rgba(255, 255, 255, 0.12);
+			border-color: rgba(255, 255, 255, 0.6);
+		}
+
+	#header nav a:before,
+	.panel nav.icons a:before {
+		border-color: rgba(255, 255, 255, 0.3);
+	}
+
+	#signup input[type="email"],
+	#signup input[type="submit"] {
+		border-color: rgba(255, 255, 255, 0.3);
+	}
+
+	.grid > * {
+		background: rgba(255, 255, 255, 0.03);
+		border: solid 1px rgba(255, 255, 255, 0.1);
+		border-radius: 1em;
+	}
+
+	.panel .inner p.coming-soon {
+		background: rgba(255, 255, 255, 0.05);
+		border: solid 1px rgba(255, 255, 255, 0.15);
+		border-radius: 3em;
+		display: inline-block;
+		font-size: 0.85em;
+		letter-spacing: 0.35em;
+		margin-top: 1.5em;
+		opacity: 1;
+		padding: 0.75em 1.9em 0.75em 2.25em;
+		text-transform: uppercase;
+	}
+
+	#footer {
+		background-image: none;
+		bottom: 0;
+		height: auto;
+		left: auto;
+		line-height: 1.5;
+		padding: 0 1.25em 1em 0;
+		right: 0;
+		text-align: right;
+		width: auto;
+	}
+
+		#footer .copyright {
+			font-size: 0.6em;
+			letter-spacing: 0.08em;
+			opacity: 0.45;
+		}
+
+			#footer .copyright a {
+				color: inherit;
+			}
+
