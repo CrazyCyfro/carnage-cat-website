@@ -1425,6 +1425,17 @@ input, select, textarea {
 		border-color: rgba(255, 255, 255, 0.3);
 	}
 
+	.formkit-form {
+		margin: 0 auto !important;
+	}
+
+	.signup-divider {
+		border: 0;
+		border-top: solid 1px rgba(255, 255, 255, 0.15);
+		margin: 1.5em auto;
+		width: 4em;
+	}
+
 	.grid > * {
 		background: rgba(255, 255, 255, 0.03);
 		border: solid 1px rgba(255, 255, 255, 0.1);
